@@ -1,0 +1,36 @@
+assimp:
+- '6'
+c_stdlib:
+- vs
+cfitsio:
+- 4.6.4
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2022
+fftw:
+- '3'
+gdal:
+- '3.13'
+libcurl:
+- '8'
+libjpeg_turbo:
+- '3'
+libpng:
+- '1.6'
+libtiff:
+- '4.7'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+pybind11_abi:
+- '4'
+python:
+- 3.10.* *_cpython
+target_platform:
+- win-64
+tbb_devel:
+- '2023'
