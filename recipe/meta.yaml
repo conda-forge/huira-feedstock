@@ -1,4 +1,4 @@
-{% set version = "0.9.9" %}
+{% set version = "0.9.10" %}
 
 package:
   name: huira
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/huira-render/huira/archive/v{{ version }}.tar.gz
-  sha256: 6c90b30da311247227fcbc8f647db9d93e1e2847a54d7d2cf4c797820497f166
+  sha256: 61331a884e1481d206ce2da3e3b230269402e7d978fa516171384de8c62db4b1
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
