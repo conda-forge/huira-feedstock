@@ -1,4 +1,4 @@
-{% set version = "0.9.10" %}
+{% set version = "0.9.11" %}
 
 package:
   name: huira
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/huira-render/huira/archive/v{{ version }}.tar.gz
-  sha256: 61331a884e1481d206ce2da3e3b230269402e7d978fa516171384de8c62db4b1
+  sha256: 30b59193e83416cd8b3bbab81f4725bad0f6763da6d1436b2dd1e4c3384c20e9
 
 build:
   number: 0
@@ -30,7 +30,6 @@ requirements:
     - gdal
     - glm
     - indicators
-    - libcurl
     - libtiff
     - libpng
     - libjpeg-turbo
@@ -47,8 +46,6 @@ test:
   commands:
     - python -c "from huira.rgb import Scene; print('Python bindings OK')"
     - huira --help
-    - huira fetch-tycho2 --help
-    - huira process-tycho2 --help
     - test -f $PREFIX/include/huira/huira.hpp                                    # [unix]
     - if not exist %LIBRARY_INC%\\huira\\huira.hpp exit 1                        # [win]
     - test -f $PREFIX/lib/cmake/huira/huiraConfig.cmake                          # [unix]
